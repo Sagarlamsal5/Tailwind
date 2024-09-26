@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <nav class="flex justify-between items-center bg-[#1d737e] px-20 py-5">
+    <nav class="flex justify-between items-center bg-primary px-20 py-5">
         <div class="logo-img w-14 h-14">
             <img src="https://thumbs.dreamstime.com/b/bmw-logo-20441751.jpg" alt="logo" class="w-full h-full rounded-full aminate-pulse">
         </div>
         <ul class="flex items-center ">
-            <li><a href="#" class="me-4 text-white hover:font-bold ">Home</a></li>
-            <li><a href="#" class="me-4 text-white hover:font-bold ">Product</a></li>
-            <li><a href="#" class="me-4 text-white hover:font-bold ">About US</a></li>
-            <li><a href="#" class="me-4 text-white hover:font-bold ">Blog</a></li>
-            <li><a href="#" class="me-4 text-white hover:font-bold ">Service</a></li>
+            <li><a href="#" class="me-4 text-red hover:font-bold ">Home</a></li>
+            <li><a href="#" class="me-4 text-red hover:font-bold ">Product</a></li>
+            <li><a href="#" class="me-4 text-red hover:font-bold ">About US</a></li>
+            <li><a href="#" class="me-4 text-red hover:font-bold ">Blog</a></li>
+            <li><a href="#" class="me-4 text-red hover:font-bold ">Service</a></li>
 
         </ul>
     </nav>
@@ -49,7 +49,7 @@
             <img src="https://laptopmedia.com/wp-content/uploads/2023/08/5-35.jpg" alt="#" class="h-full w-full transition-tramsform duration-1000 hover:scale-150">
         </div>
 
-        <div class="w-32 h-8 bg-red-400 rotate-45 absolute right-[-35px] top-3 ">
+        <div class="w-32 h-8 bg-gradient-to-br from-blue-600 to-red-400  rotate-45 absolute right-[-35px] top-3 ">
             <p class="text-white font-semibold text-center text-sm pt-1"> 30% sale</p>
         </div>
 
@@ -110,6 +110,17 @@
         </div>
 
     </div>
-</body>
 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#e6ff33',
+              }
+            }
+          }
+        }
+      </script>
+</body>
 </html>
